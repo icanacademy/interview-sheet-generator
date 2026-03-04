@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Bank Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .error { color: red; background: #fee; padding: 10px; margin: 10px 0; }
+        .success { color: green; background: #efe; padding: 10px; margin: 10px 0; }
+        pre { background: #f5f5f5; padding: 10px; overflow: auto; }
+    </style>
+</head>
+<body>
+    <h1>Text Bank Diagnostic Test</h1>
+    <div id="results"></div>
+
+    <script>
+        const results = document.getElementById('results');
+
+        function log(msg, type = 'info') {
+            const div = document.createElement('div');
+            div.className = type;
+            div.innerHTML = msg;
+            results.appendChild(div);
+        }
+
+        // Test 1: Check if page loads
+        log('✅ Test 1: Page loaded successfully', 'success');
+
+        // Test 2: Check localStorage
+        try {
+            localStorage.setItem('test', 'works');
+            localStorage.removeItem('test');
+            log('✅ Test 2: localStorage is available', 'success');
+        } catch(e) {
+            log('❌ Test 2: localStorage error: ' + e.message, 'error');
+        }
+
+        // Test 3: Check if textbank data exists
+        const categories = ['overall', 'pronunciation', 'fluency', 'comprehension', 'insight', 'vocab', 'improvements', 'strengths'];
+        categories.forEach(cat => {
+            const stored = localStorage.getItem(`textBank_${cat}`);
+            if (stored) {
+                const data = JSON.parse(stored);
+                log(`✅ Test 3: Found ${data.length} phrases in localStorage for "${cat}"`, 'success');
+            } else {
+                log(`⚠️ Test 3: No localStorage data for "${cat}" (will use defaults)`, 'info');
+            }
+        });
+
+        // Test 4: Open the main page
+        setTimeout(() => {
+            log('<br><h3>Opening main application...</h3>', 'info');
+            log('<p>Check the browser console (F12 → Console) for these messages:</p>', 'info');
+            log('<pre>• "Text Bank initialized successfully" (should appear)\n• Any error messages (should NOT appear)</pre>', 'info');
+            log('<br><button onclick="window.open(\'index.html\', \'_blank\')">Open Main App</button>', 'info');
+        }, 500);
+    </script>
+</body>
+</html>

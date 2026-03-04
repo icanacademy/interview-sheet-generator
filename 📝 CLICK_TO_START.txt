@@ -1,0 +1,53 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║      🎓 ICAN INTERVIEW SHEET GENERATOR                        ║
+║                                                                ║
+║      ✨ Ready to Use!                                         ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📋 TO START THE APP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   👉 Double-click: "Launch Interview App.command"
+
+   That's it! The server will start and your browser will open.
+
+
+🛑 TO STOP THE APP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   👉 Double-click: "Stop Interview App.command"
+
+
+📖 FOR MORE INFO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   • Open "START_HERE.md" for full instructions
+   • Open "HOW_TO_ADD_CUSTOM_ICON.md" to customize the icon
+
+
+🌐 ACCESS FROM:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   This Computer:    http://localhost:1120
+   Other Devices:    http://192.168.68.106:1120
+
+
+💡 FEATURES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   ✓ Automatic student data loading from Notion
+   ✓ Auto-save every 2 seconds
+   ✓ Initial & Final interview comparison
+   ✓ AI-powered report enhancement
+   ✓ Import completed interviews to Notion
+   ✓ Print-friendly sheets
+
+
+═══════════════════════════════════════════════════════════════════
+
+         Ready to conduct interviews? Let's go! 🚀
+
+═══════════════════════════════════════════════════════════════════
